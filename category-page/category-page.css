@@ -51,9 +51,40 @@ body {
     font-weight: 600 !important;
 }
 
-.container-btn {
-    position: relative;
+/*FOOTER TEST INIT CSS STYLE*/
+footer.footer-styles{
+    height: 110px;
+    padding-top: 10px; 
 }
+
+.developed-by-styles{
+    text-align: left;
+}
+
+.developers-styles{
+    text-align: left;
+}
+
+.footer-developers{
+    width: 20%;
+}
+
+.width-40{
+    width: 40%
+}
+
+.width-60{
+    width: 60%;
+}
+
+.orange-color{
+    color: #ff6600;
+}
+/*FOOTER TEST END CSS STYLE*/
+
+/*.container-btn {
+    position: relative;
+}*/
 
 /*SCROLL BAR CSS STYLE*/
 ::-webkit-scrollbar {
