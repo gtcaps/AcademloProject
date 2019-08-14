@@ -9,7 +9,6 @@ body {
     font-weight: 700;
 }
 
-
 /* COMPONENT CARD */
 
 .col-card {
@@ -22,7 +21,6 @@ body {
 }
 
 .card-img {
-    /*border: solid 1px blue;*/
     height: 350px !important;
     overflow: auto;
 }
@@ -35,12 +33,6 @@ body {
     /*border: solid 1px red;*/
     min-height: auto !important;
 }
-
-/*
-.card-body {
-    height: 100%;
-}
-*/
 
 .card-title {
     font-size: 1.8rem;
@@ -77,6 +69,8 @@ body {
     background: #CCCCCC; 
     border-radius: 10px;
 }
+
+/* MEDIA QUERIES */
 
 @media (min-width: 700px) {
     .custome-container {
