@@ -24,11 +24,38 @@
 
     <title>Product Page</title>
   </head>
+
   <body>
-    <div class="container-fluid custome-container">
+    <!--TESTED NAVBAR - INIT-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-font">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-uppercase " id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Explorar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Agregar</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--TESTED NAVBAR - END-->
+
+    <div class="container-fluid custome-container mt-5">
       <div class="row">
         <div class="col-md-6 d-flex flex-column justify-content-between">
-
           <div class="principal-text">
             <h1>Flow Microsoft</h1>
             <p class="text-secondary">
@@ -37,23 +64,22 @@
           </div>
 
           <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-transparent btn-block">
+                Visite site
+              </a>
+            </div>
 
-              <div class="col-md-6">
-                <a href="#" class="btn btn-transparent btn-block">
-                    Visite site
-                </a>
+            <div class="col-md-6">
+              <div
+                class="row s-media d-flex justify-content-end align-items-center"
+              >
+                <h4 class="mr-1">Share</h4>
+                <i class="fab fa-facebook-square"></i>
+                <i class="ml-2 fab fa-twitter-square"></i>
               </div>
-
-              <div class="col-md-6">
-                <div class="row s-media d-flex justify-content-end align-items-center">
-                  <h4 class="mr-1">Share</h4>
-                  <i class="fab fa-facebook-square"></i>
-                  <i class="ml-2 fab fa-twitter-square"></i>
-                </div>
-              </div>
-
+            </div>
           </div>
-
         </div>
         <div class="col-md-6">
           <div class="card-img">
@@ -62,6 +88,30 @@
         </div>
       </div>
     </div>
+
+    <!--TESTED FOOTER - INIT-->
+    <footer
+      class="container-fluid footer-styles bg-light d-flex justify-content-between align-items-center"
+    >
+      <p class="footer-message ">
+        Do you like BRAND? <span class="orange-color">Advertise with us</span>
+      </p>
+      <p class="footer-developers d-flex flex-wrap">
+        <span class="width-40  developed-by-styles">Developed by:</span>
+        <span class="width-60  orange-color developers-styles"
+          >Nombre 1 Apellido2</span
+        >
+        <span class="width-40 none-footer"></span>
+        <span class="width-60  orange-color developers-styles"
+          >Nombre2 Apellido2</span
+        >
+        <span class="width-40 none-footer"></span>
+        <span class="width-60  orange-color developers-styles"
+          >Nombre3 Apellido3</span
+        >
+      </p>
+    </footer>
+    <!--TESTED FOOTER - END-->
 
     <script src="https://kit.fontawesome.com/675105a60e.js"></script>
   </body>
