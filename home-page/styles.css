@@ -83,9 +83,6 @@ footer.footer-styles{
 
 @media (min-width: 576px) { 
 
-    body{
-        background: yellow;
-    }
 
     .gradient-container{
         height: 40vh;
@@ -130,9 +127,6 @@ footer.footer-styles{
 
 @media (min-width: 768px) { 
 
-    body{
-        background: green;
-    }
 
     p.phrase{
         font-size: 2.3rem;
@@ -143,10 +137,6 @@ footer.footer-styles{
 
 
 @media (min-width: 992px) { 
-
-    body{
-        background: blue;
-    }
 
     .footer-message{
         width: 50%;
@@ -165,9 +155,6 @@ footer.footer-styles{
 
 @media (min-width: 1200px) { 
 
-    body{
-        background: red;
-    }
 
     .footer-message{
         width: 50%;
@@ -187,9 +174,6 @@ footer.footer-styles{
 
  @media (min-width: 1300px) { 
 
-    body{
-        background: gold;
-    }
 
     p.phrase{
         font-size: 2.8rem;
