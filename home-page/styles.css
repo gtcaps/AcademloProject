@@ -44,6 +44,14 @@ footer.footer-styles{
     padding-top: 10px; 
 }
 
+.developed-by-styles{
+    text-align: left;
+}
+
+.developers-styles{
+    text-align: left;
+}
+
 .footer-developers{
     width: 20%;
 }
@@ -72,3 +80,124 @@ footer.footer-styles{
     color: #ff6600;
 }
 
+
+@media (min-width: 576px) { 
+
+    body{
+        background: yellow;
+    }
+
+    .gradient-container{
+        height: 40vh;
+    }
+
+    p.phrase{
+        font-size: 2rem;
+        width: 75%;
+    }
+
+    a.text-btn{
+        color: #000;
+        border-radius: 1px;
+        font-size: 0.8rem;
+        padding: 10px 50px;
+    }
+
+    .footer-message, .footer-developers{
+        width: 50%;
+        font-size: 0.8rem;
+    }
+
+    .developed-by-styles{
+        width: 100%;
+        text-align: right;
+    }
+
+    span.developers-styles{
+        width: 100%;
+        display: block;
+        text-align: right;
+    }
+
+    .none-footer{
+        display: none;
+    }
+
+    
+
+ }
+
+
+@media (min-width: 768px) { 
+
+    body{
+        background: green;
+    }
+
+    p.phrase{
+        font-size: 2.3rem;
+        width: 65%;
+    }
+
+ }
+
+
+@media (min-width: 992px) { 
+
+    body{
+        background: blue;
+    }
+
+    .footer-message{
+        width: 50%;
+        font-size: 0.9rem;
+    }
+
+    p.phrase{
+        font-size: 2.3rem;
+        width: 50%;
+    }
+    
+ }
+
+
+
+
+@media (min-width: 1200px) { 
+
+    body{
+        background: red;
+    }
+
+    .footer-message{
+        width: 50%;
+        font-size: 1rem;
+    }
+
+    .footer-developers{
+        font-size: 0.9rem;
+    }
+
+    .gradient-container{
+        height: 50vh;
+    }
+
+
+ }
+
+ @media (min-width: 1300px) { 
+
+    body{
+        background: gold;
+    }
+
+    p.phrase{
+        font-size: 2.8rem;
+        width: 50%;
+    }
+
+    .gradient-container{
+        height: 60vh;
+    }
+
+ }
