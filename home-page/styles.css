@@ -80,10 +80,27 @@ footer.footer-styles{
     color: #ff6600;
 }
 
+#main-styles{
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+footer{
+    color: black;
+    min-height: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+
+
 @media (max-width: 480px) { 
+
     p.phrase{
-        font-size: 1.7rem;
-        width: 80%;
+        font-size: 1.7rem !important;
+        width: 80% !important;
     }
 
     footer.footer-styles{
@@ -117,14 +134,20 @@ footer.footer-styles{
     }
 }
 
-@media (min-width: 320px) { 
+@media (max-width: 320px) {
+    
+    p.phrase{
+        font-size: 1rem !important;
+        width: 90% !important;
+    }
+    
     .footer-message{
         font-size: 0.8rem;
     }
 }
 
 
-@media (min-width: 576px) { 
+@media (max-width: 640px) { 
 
 
     .gradient-container{
@@ -132,8 +155,8 @@ footer.footer-styles{
     }
 
     p.phrase{
-        font-size: 2rem;
-        width: 75%;
+        font-size: 2rem !important;
+        width: 75% !important;
     }
 
     a.text-btn{
@@ -172,16 +195,14 @@ footer.footer-styles{
 
 
     p.phrase{
-        font-size: 2.3rem;
-        width: 65%;
+        font-size: 2.3rem !important;
+        width: 80% !important;
     }
-
    
-
  }
 
 
-@media (min-width: 992px) { 
+@media (max-width: 992px) { 
 
     .footer-message{
         width: 50%;
@@ -203,7 +224,7 @@ footer.footer-styles{
 
     .footer-message{
         width: 50%;
-        font-size: 1rem;
+        font-size: 1rem !important;
     }
 
     .footer-developers{
@@ -217,7 +238,7 @@ footer.footer-styles{
 
  }
 
- @media (min-width: 1300px) { 
+ @media (max-width: 1300px) { 
 
 
     p.phrase{

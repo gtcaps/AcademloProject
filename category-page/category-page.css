@@ -102,6 +102,25 @@ footer.footer-styles{
 }
 
 /* MEDIA QUERIES */
+@media (max-width: 480px) { 
+    .card-body .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-body .card-text {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    .card-img {
+        height: 200px !important;
+        overflow: auto;
+    }
+}
+
 
 @media (min-width: 700px) {
     .custome-container {
