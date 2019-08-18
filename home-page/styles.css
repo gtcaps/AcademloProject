@@ -80,6 +80,49 @@ footer.footer-styles{
     color: #ff6600;
 }
 
+@media (max-width: 480px) { 
+    p.phrase{
+        font-size: 1.7rem;
+        width: 80%;
+    }
+
+    footer.footer-styles{
+        flex-wrap: wrap;
+    }
+
+    p.footer-message{
+        width: 100%;
+        text-align: center;
+    }
+
+    p.footer-developers{
+        width: 100%;
+        display: flex;
+    }
+
+    .developed-by-styles{
+        font-size: 0.8rem;
+        width: 40%;
+    }
+
+    .developers-styles{
+        font-size: 0.8rem;
+        width: 60%;
+        text-align: right;
+    }
+
+
+    .none-footer{
+        display: block;
+    }
+}
+
+@media (min-width: 320px) { 
+    .footer-message{
+        font-size: 0.8rem;
+    }
+}
+
 
 @media (min-width: 576px) { 
 
@@ -132,6 +175,8 @@ footer.footer-styles{
         font-size: 2.3rem;
         width: 65%;
     }
+
+   
 
  }
 
