@@ -34,6 +34,12 @@ body {
     min-height: auto !important;
 }
 
+.card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .card-title {
     font-size: 1.8rem;
     font-weight: 700 !important;
