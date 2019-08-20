@@ -14,7 +14,10 @@
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
+      rel="stylesheet"
+    />
     <!-- BOOTSTRAP - 4.3 -->
     <link
       rel="stylesheet"
@@ -26,33 +29,32 @@
     <title>Category Page</title>
   </head>
   <body>
-
     <!--TESTED NAVBAR - INIT-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-font">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-uppercase " id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Explorar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Agregar</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!--TESTED NAVBAR - END-->
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-uppercase " id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Explorar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Agregar</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--TESTED NAVBAR - END-->
 
     <div class="container-fluid custome-container mt-5">
       <h2>Category name</h2>
@@ -121,28 +123,30 @@
     </div>
 
     <!--TESTED FOOTER - INIT-->
-    <footer
-      class="container-fluid footer-styles bg-light d-flex justify-content-between align-items-center mt-5"
-    >
-      <p class="footer-message ">
-        Do you like BRAND? <span class="orange-color">Advertise with us</span>
-      </p>
-      <p class="footer-developers d-flex flex-wrap">
-        <span class="width-40  developed-by-styles">Developed by:</span>
-        <span class="width-60  orange-color developers-styles"
-          >Nombre 1 Apellido2</span
-        >
-        <span class="width-40 none-footer"></span>
-        <span class="width-60  orange-color developers-styles"
-          >Nombre2 Apellido2</span
-        >
-        <span class="width-40 none-footer"></span>
-        <span class="width-60  orange-color developers-styles"
-          >Nombre3 Apellido3</span
-        >
-      </p>
+    <footer class="row bg-light m-0 d-flex align-items-center mt-5 p-3">
+      <div class="col-md-6 col-sm-7 col-12 row size-footer">
+        <p class="col-md-7 col-xl-4 text-xl-right col-lg-5 col-sm-7 col-6">
+          Do you like brand?
+        </p>
+        <p class="col-md-5 col-xl-8 text-left col-sm-5 col-6 p-0 orange-color">
+          Contact With Us
+        </p>
+      </div>
+      <div class="col-md-6 col-sm-5 col-12 row">
+        <p class="col-md-12  text-center text-right text-sm-right m-0">
+          Developed By:
+        </p>
+        <p class="col-md-12  text-center text-sm-right m-0 orange-color">
+          NOMBRE 2 APELLIDO 2
+        </p>
+        <p class="col-md-12  text-center text-sm-right m-0 orange-color">
+          NOMBRE 2 APELLIDO 2
+        </p>
+        <p class="col-md-12  text-center text-sm-right m-0 orange-color">
+          NOMBRE 2 APELLIDO 2
+        </p>
+      </div>
     </footer>
     <!--TESTED FOOTER - END-->
-
   </body>
 </html>
