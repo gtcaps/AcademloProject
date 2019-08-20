@@ -95,6 +95,56 @@ footer{
 }
 
 
+.category-container-style{
+    margin-top: 70px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.fluid-styles{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: red;
+    margin-bottom: 20px;
+}
+
+div.card-styles{
+    width: calc((100% / 4) - 15px);
+    background: linear-gradient(30deg, tomato, purple);
+    z-index: 1000;
+}
+
+div.card-styles .card-description{
+    position: absolute;
+    padding: 20px;
+    z-index: 1000;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+div.card-styles .card-description .icon-style{
+    color: white;
+    font-size: 3rem;
+}
+
+div.card-styles img{
+    width: 100%;
+    height: 200px;
+    z-index: 0;
+    opacity: 0.3;
+    position: relative;
+    transition: all 1s;
+}
+
+div.card-styles:hover img{
+    opacity: 0.1;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+
 
 @media (max-width: 480px) { 
 
@@ -132,6 +182,26 @@ footer{
     .none-footer{
         display: block;
     }
+
+    div.fluid-styles{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.card-styles{
+        width: 100% !important;
+        height: 300px !important; 
+    }
+
+    div.card-styles .card-description{
+        font-size: 1.3rem;
+    }
+    
+    div.card-styles .card-description .icon-style{
+        color: white;
+        font-size: 3rem;
+    }
+
 }
 
 @media (max-width: 320px) {
@@ -144,6 +214,17 @@ footer{
     .footer-message{
         font-size: 0.8rem;
     }
+
+    div.card-styles .card-description{
+        font-size: 1rem;
+    }
+
+    .sub-title-description{
+        background:red;
+        align-self: flex-start;
+    }
+
+    
 }
 
 
@@ -186,6 +267,20 @@ footer{
         display: none;
     }
 
+    div.fluid-styles{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.card-styles{
+        width: calc((100% / 2) - 15px);
+        margin-bottom: 30px;
+        height: 230px;
+    }
+
+    div.card-styles img{
+        height: 100%;
+    }
     
 
  }
@@ -199,10 +294,29 @@ footer{
         width: 80% !important;
     }
    
+
+    div.fluid-styles{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.card-styles{
+        width: calc((100% / 2) - 15px);
+        margin-bottom: 30px;
+        height: 230px;
+    }
+
+    div.card-styles img{
+        height: 100%;
+    }
+
+
+
+
  }
 
 
-@media (max-width: 992px) { 
+@media (min-width: 992px) { 
 
     .footer-message{
         width: 50%;
@@ -212,6 +326,15 @@ footer{
     p.phrase{
         font-size: 2.3rem;
         width: 50%;
+    }
+
+    div.card-styles{
+        width: calc((100% / 4) - 15px);
+        height: 200px;
+    }
+
+    div.card-styles img{
+        height: 100%;
     }
     
  }
