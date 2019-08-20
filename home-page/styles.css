@@ -145,6 +145,23 @@ div.card-styles:hover img{
 }
 
 
+/* SEARCH BOX INPUT - INIT*/
+.input-search {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.input-search:focus {
+    border-color: none !important;
+}
+
+.input-group-text {
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+}
+/* SEARCH BOX INPUT - END*/
 
 @media (max-width: 480px) { 
 
