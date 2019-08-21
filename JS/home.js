@@ -58,19 +58,25 @@ async function getCategories(){
     //console.log(arrayCat);
 
     for( let i = 0; i < 8; i++ ){
+
+        let apiDataProd = await fetch(`${urlApi}/categories/${arrayCat[i].uuid}/products`);
+        let cantProdData = await apiDataProd.json();
+
+        let cantProd = cantProdData.products.length;
+
         let cardContainer = document.getElementById('content-categories');
-        cardCat +=`<div class="card card-styles">
+        cardCat +=`<div class="card card-styles"><a href="../category-page/category-page.html?${arrayCat[i].uuid}">
             <div class="card-description d-flex justify-content-center align-items-center flex-wrap ">
                 <i class="fab fa-js-square icon-style "></i>
                 <p class="title-description d-block w-100 text-center">
                     ${arrayCat[i].name}
                 </p>
                 <p class="sub-title-description">
-                    12 Entradas
+                    ${cantProd} Entradas
                 </p>
             </div>
             <img src="https://images.pexels.com/photos/7114/laptop-mobile.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                alt="Foto 1">
+                alt="Foto 1"></a>
         </div>`;
 
         cardContainer.innerHTML = cardCat;
