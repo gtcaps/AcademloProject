@@ -1,17 +1,24 @@
 const urlApi = "http://fundamentos.academlo.com/api/v1";
-const category_id = "5c82982e-b63e-4280-8287-4eba0e99716a"; //Prueba Libros - Reemplazar por el de programming
+const directory_id = "5c82982e-b63e-4280-8287-4eba0e99716a"; //Prueba Libros - Reemplazar por el de programming
 
 /**
  La variable "n" que recibe la funcion es el indice en el arreglo de categories. 
  */
 
-async function getCategoriesProducts(n){
+async function getCategoriesProducts(){
+    let productsData = { };
     /** API CALLS */
-    let apiData = await fetch(`${urlApi}/directories/${category_id}/categories`);
+    let apiData = await fetch(`${urlApi}/directories/${directory_id}/categories`);
     let categoriesData = await apiData.json();
-    
-    let products = await fetch(`${urlApi}/categories/${categoriesData.categories[n].uuid}/products`);
-    let productsData = await products.json();
+
+    let randomCatProducts = (Math.floor(Math.random() * categoriesData.categories.length));
+
+    if(randomCatProducts == 0){
+        randomCatProducts = 1;
+    } else {
+        let products = await fetch(`${urlApi}/categories/${categoriesData.categories[randomCatProducts].uuid}/products`);
+        productsData = await products.json();
+    }
 
     let arrayP = productsData.products;
     let colData = '';
@@ -31,7 +38,7 @@ async function getCategoriesProducts(n){
                         </p>
                     </div>
                     <div>
-                        <a href="${arrayP[i].url}" target=_blank class="btn btn-transparent btn-block">Visite site</a>
+                        <a href="../product-page/product-page.html?${arrayP[i].uuid}" class="btn btn-transparent btn-block">Visite site</a>
                     </div>
                 </div>
             </div>
@@ -42,13 +49,13 @@ async function getCategoriesProducts(n){
 }
 
 async function getCategories(){
-    let apiData = await fetch(`${urlApi}/directories/${category_id}/categories`);
+    let apiData = await fetch(`${urlApi}/directories/${directory_id}/categories`);
     let categoriesData = await apiData.json();
 
     let arrayCat = categoriesData.categories;
     let cardCat = '';
 
-    console.log(arrayCat);
+    //console.log(arrayCat);
 
     for( let i = 0; i < 8; i++ ){
         let cardContainer = document.getElementById('content-categories');
@@ -71,4 +78,4 @@ async function getCategories(){
 }
 
 getCategories();
-getCategoriesProducts(5);
+getCategoriesProducts();

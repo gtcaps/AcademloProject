@@ -4,15 +4,6 @@ const category_id = "5c82982e-b63e-4280-8287-4eba0e99716a"; //Prueba Libros - Re
 
 async function getSelectedProduct(uuidProduct){
     /** API CALLS */
-    //Obtengo categoria (En este caso Libros)
-    /*
-    let apiData = await fetch(`${urlApi}/directories/${category_id}/categories`);
-    let categoriesData = await apiData.json();
-
-    //Obtengo subcategoria (filosofia - historia ...) pasando su indice
-    let products = await fetch(`${urlApi}/categories/${categoriesData.categories[subCatArrayIndex].uuid}/products`);
-    let productsData = await products.json();
-    */
     //Obtengo la data del producto con su uuid
     let productSearch = await fetch(`${urlApi}/products/${uuidProduct}`);
     let productSearcData = await productSearch.json();

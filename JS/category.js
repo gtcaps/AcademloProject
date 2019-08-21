@@ -16,7 +16,7 @@ async function getCategorieProducts(uuidCategory){
     let arrayP = productsData.products;
     let colData = '';
 
-    console.log(arrayP);
+    console.log(uuidCategory);
     for( let i = 0; i < arrayP.length; i++ ) {
         let rowData = document.getElementById('row-data');
         colData += `<div class="col-md-4 col-card">
