@@ -50,7 +50,7 @@ async function getCategories(){
 
     console.log(arrayCat);
 
-    for( let i = 0; i < arrayCat.length; i++ ){
+    for( let i = 0; i < 8; i++ ){
         let cardContainer = document.getElementById('content-categories');
         cardCat +=`<div class="card card-styles">
             <div class="card-description d-flex justify-content-center align-items-center flex-wrap ">
