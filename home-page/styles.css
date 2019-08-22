@@ -28,7 +28,8 @@ a.text-btn{
 }
 
 a.text-btn:hover{
-    color: grey;
+    color: white;
+    background: #F85D4A!important;
 }
 
 p.phrase{
@@ -167,6 +168,13 @@ div.card-styles:hover img{
     background-color: transparent;
 }
 /* SEARCH BOX INPUT - END*/
+
+/* BTN HOVER EFFECT - INIT */
+.btn:hover {
+    color: white;
+    background: #F85D4A;
+}
+/* BTN HOVER EFFECT - END */
 
 @media (max-width: 480px) { 
 

@@ -113,6 +113,13 @@ footer.footer-styles{
     border-radius: 10px;
 }
 
+/* BTN HOVER EFFECT - INIT */
+.btn:hover {
+    color: white;
+    background: #F85D4A;
+}
+/* BTN HOVER EFFECT - END */
+
 /* MEDIA QUERIES */
 @media (max-width: 480px) { 
     .card-body .card-title {

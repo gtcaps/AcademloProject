@@ -12,6 +12,10 @@ body {
     font-weight: 200;
 }
 
+#row-data {
+    min-height: calc(100vh - 280px);
+}
+
 i {
     font-size: 2em;
     color: #343A40;
@@ -88,6 +92,13 @@ footer.footer-styles{
     background: #CCCCCC; 
     border-radius: 10px;
 }
+
+/* BTN HOVER EFFECT - INIT */
+.btn:hover {
+    color: white;
+    background: #F85D4A;
+}
+/* BTN HOVER EFFECT - END */
 
 /* MEDIA QUERIES */
 
