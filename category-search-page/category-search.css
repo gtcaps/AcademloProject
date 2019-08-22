@@ -2,6 +2,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+nav {
+    box-shadow: 0 4px 2px -2px #CCCCCC !important;
+}
+
 /* SEARCH BOX INPUT - INIT*/
 .input-search {
     border-top: none;
@@ -22,6 +26,10 @@ body {
 
 
 /*FOOTER TEST INIT CSS STYLE*/
+footer {
+    box-shadow: 0 -5px 5px -5px #CCCCCC;
+}
+
 footer.footer-styles{
     height: 110px;
     padding-top: 10px; 

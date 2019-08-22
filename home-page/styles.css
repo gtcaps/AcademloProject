@@ -2,6 +2,9 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+nav {
+    box-shadow: 0 4px 2px -2px #CCCCCC !important;
+}
 
 .gradient-container{
     background:  url("https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
@@ -98,8 +101,12 @@ footer{
     padding-bottom: 10px;
     padding-top: 10px;
     padding-left: 20px;
+    box-shadow: 0 -5px 5px -5px #CCCCCC;
 }
 
+.card {
+    box-shadow: 0 0 5px #CCCCCC;
+}
 
 .category-container-style{
     margin-top: 70px;

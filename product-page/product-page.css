@@ -2,6 +2,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+nav {
+    box-shadow: 0 4px 2px -2px #CCCCCC !important;
+}
+
 .principal-text h1 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -42,6 +46,10 @@ i {
 
 
 /*FOOTER TEST INIT CSS STYLE*/
+footer {
+    box-shadow: 0 -5px 5px -5px #CCCCCC;
+}
+
 footer.footer-styles{
     height: 110px;
     padding-top: 10px; 
@@ -205,13 +213,14 @@ ul li:nth-child(7) {
 
     .card-img img {
         width: 100%;
-
+        box-shadow: 0 0 5px #333;
     }
 
     .btn {
         border: 2.2px solid #8E8E8E;
         font-size: 1.5rem;
         font-weight: 600 !important;
+        box-shadow: 0 0 5px #CCCCCC;
     }
 
     .s-media {

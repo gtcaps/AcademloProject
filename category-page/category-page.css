@@ -4,6 +4,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+nav {
+    box-shadow: 0 4px 2px -2px #CCCCCC !important;
+}
+
 /**/
 .custome-container h2 {
     font-weight: 700;
@@ -15,9 +19,9 @@ body {
     margin-top: 30px;
 }
 
-
 .card {
     height: 100%;
+    box-shadow: 0 0 5px #CCCCCC;
 }
 
 .card-img {
@@ -55,9 +59,14 @@ body {
     border: 2.2px solid #dfdfdf;
     font-size: 1rem;
     font-weight: 600 !important;
+    box-shadow: 0 0 5px #CCCCCC;
 }
 
 /*FOOTER TEST INIT CSS STYLE*/
+footer {
+    box-shadow: 0 -5px 5px -5px #CCCCCC;
+}
+
 footer.footer-styles{
     height: 110px;
     padding-top: 10px; 
