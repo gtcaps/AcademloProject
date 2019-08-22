@@ -1,9 +1,6 @@
 const urlApi = "http://fundamentos.academlo.com/api/v1";
 const directory_id = "5c82982e-b63e-4280-8287-4eba0e99716a"; //Prueba Libros - Reemplazar por el de programming
 
-/**
- La variable "n" que recibe la funcion es el indice en el arreglo de categories. 
- */
 
 async function getCategoriesProducts(){
     let productsData = { };
@@ -82,6 +79,15 @@ async function getCategories(){
         cardContainer.innerHTML = cardCat;
     }
 }
+
+/***************************
+ *  JQUERY - LOADER SCRIPT *
+ ***************************/
+$(window).on("load", function() {
+    jQuery(".loader-wrapper")
+      .delay(1000)
+      .fadeOut("slow");
+});
 
 getCategories();
 getCategoriesProducts();

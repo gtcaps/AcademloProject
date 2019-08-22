@@ -45,6 +45,15 @@ async function getSelectedProduct(uuidProduct){
 
 }
 
+/***************************
+ *  JQUERY - LOADER SCRIPT *
+ ***************************/
+$(window).on("load", function() {
+  jQuery(".loader-wrapper")
+    .delay(1000)
+    .fadeOut("slow");
+});
+
 let parametro = window.location.href;
 let arrayParametro = parametro.split('?')
 

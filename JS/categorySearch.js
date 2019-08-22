@@ -32,4 +32,13 @@ async function getAllCategories(){
     }
 }
 
+/***************************
+ *  JQUERY - LOADER SCRIPT *
+ ***************************/
+$(window).on("load", function() {
+    jQuery(".loader-wrapper")
+      .delay(1000)
+      .fadeOut("slow");
+});
+
 getAllCategories();
