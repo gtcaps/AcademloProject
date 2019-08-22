@@ -66,6 +66,12 @@ footer.footer-styles{
 .orange-color{
     color: #ff6600;
 }
+
+.profile-link:hover {
+    color: #ff6600 !important;
+    text-decoration: none !important;
+}
+
 /*FOOTER TEST END CSS STYLE*/
 
 /*SCROLL BAR CSS STYLE*/
